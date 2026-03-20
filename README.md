@@ -1,7 +1,21 @@
 # MOGT
 MOGT is a semi-supervised graph neural network that integrates the multi-omics data of genes and the topology information of biological networks.To construct the multi-omics representation graph, we represented genes as nodes and SNP-SNP interactions as edges. The node features were the multi-omics data of genes, including differential expression (DE), enhancer-promoter interactions (EPI) in patients and controls, and gene expression in five brain regions（Parietal Lobe, Frontal Lobe, Temporal Lobe, Cerebellum, and occipital Lobe）in adolescents and adults.
 
-![image](https://github.com/biomed-AI/MOGT/blob/main/img/Framework.png)
+![image](https://github.com/biomed-AI/MOGT/blob/main/img/Framework.tif)
+
+## Versioned Release and Archival
+
+The exact version of the code used in the manuscript is archived as:
+
+GitHub repository:https://github.com/biomed-AI/MOGT
+
+GitHub release:v1.0.0-paper
+
+Commit hash:1a02176207a6e07c4a5b03bf325e22c28f3ca034
+
+All results reported in the manuscript were generated using this tagged release.
+
+Future updates will not modify this release to ensure long-term reproducibility.
 
 ## Documentation
 MOGT documentation is available through [Documentation](https://github.com/biomed-AI/MOGT/blob/main/README.md).
