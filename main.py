@@ -168,7 +168,8 @@ def train(model, fold, train_loader_list, valid_loader_list, optimizer, devices,
         optimizer.zero_grad()
         out,sim_matrix,KL_Loss = model(data)
         
-        true_lab = data.y[:, 1].to(devices)
+        true_lab = data.y[:size][:, 1].to(devices)
+        out = out[:size]
         out = out.view(-1)
         loss = loss_func(out, true_lab.float())
         alpha1 = 0.01
